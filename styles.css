@@ -1,0 +1,93 @@
+/* Style the navigation menu */
+.topnav {
+ overflow: hidden;
+ position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+ display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+ color: black;
+ padding: 14px 16px;
+ text-decoration: none;
+ font-size: 45px;
+ display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+ display: block;
+ position: absolute;
+ right: 0;
+ top: 0;
+}
+
+/* Style the hover over effect */
+.topnav a:hover {
+ color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style body */
+body {
+  background: #6190E8;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #A7BFE8, #6190E8);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #A7BFE8, #6190E8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Style album photos */
+.albums {
+  border: 10px solid black;
+  margin: 10px;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: left;
+  font-size: 45px;
+  font-weight: 400;
+  padding: 0px 0px;
+  margin: -40px 0px -40px 40px;
+  color: black;
+}
+
+/* Content after row */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 20%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo, .albums {
+  opacity: 0.6;
+}
+
+/* Removes transparency effect for thumbnail images */
+.active,
+.demo:hover, .albums:hover {
+  opacity: 1;
+}

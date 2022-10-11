@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel='stylesheet' href="styles.css" />
+<script src="page.js"></script>
+</head>
+
+<header id="page-nav">
+  </fieldset>
+  <!-- Top Navigation Menu -->
+  <div class="topnav">
+    <a href="#home" class="active"> <img src="photos/dg-logo2.png" style="width:5%"> Drain Gang </a>
+    <!-- Navigation links (hidden by default) -->
+    <div id="myLinks">
+      <a href="#artists">Artists</a>
+      <a href="#producers">Producers</a>
+      <a href="#tracks">Tracks</a>
+    </div>
+    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</header>
+
+<body>
+<!-- Container for the image gallery -->
+<div class="container">
+
+  <!-- Full-width images with number text -->
+  <div class="mySlides">
+    <img src="photos/bladee.jpg" style="width:25%">
+    <a href="https://www.youtube.com/watch?v=rTcXsy0oJR8&list=PLGeJR8ZOrTZfQli7vpdXKKmPApjCyzTlg" target="_blank"> <img class="albums" src="photos/333.jpg" style="width:15%"> </a>
+    <a href="https://www.youtube.com/watch?v=_wSYw8epNmc&list=OLAK5uy_lc48z8Fxrsp6YqGb6lyG5LgpNWbmL5tOE" target="_blank"> <img class="albums" src="photos/exteter.jpg" style="width:15%"> </a>
+    <a href="https://www.youtube.com/watch?v=J5Hik1ziLX8&list=PLGeJR8ZOrTZfpNwWDQGZfPZIREuOxDzFR" target="_blank"> <img class="albums" src="photos/red-light.jpg" style="width:15%"> </a>
+    <a href="https://www.youtube.com/watch?v=u-c-qboOxrE&list=OLAK5uy_lGsSsAd21l9NK0y5tk1hhI9QXgksQXaX8&index=1" target="_blank"> <img class="albums" src="photos/working-on-dying.jpg" style="width:15%"> </a>
+  </div>
+
+  <div class="mySlides">
+      <img src="photos/ecco2k.jpg" style="width:25%">
+      <a href="https://www.youtube.com/watch?v=HeLdS491PDo&list=PLGeJR8ZOrTZeWKqQbbH5Zfdgc5g2pX73G" target="_blank"> <img class="albums" src="photos/e.jpg" style="width:15%"> </a>
+  </div>
+
+  <div class="mySlides">
+      <img src="photos/thaiboy-digital.jpg" style="width:25%">
+      <a href="https://www.youtube.com/watch?v=XzlEKPuq4oU&list=OLAK5uy_l8RhlLP1rQZbnpSxlXFqiTZ31tMTFs4Kk" target="_blank"> <img class="albums" src="photos/legendary-member.jpg" style="width:15%"> </a>
+      <a href="https://www.youtube.com/watch?v=oWf7P1vtB6U&list=OLAK5uy_kLVsGDZdNdy1PDabFwUje8XcGpUKU7YOw" target="_blank"> <img class="albums" src="photos/tiger.jpg" style="width:15%"> </a>
+  </div>
+
+  <div class="mySlides">
+      <img src="photos/whitearmor.jpg" style="width:25%">
+      <a href="https://www.youtube.com/watch?v=sayaJaLbv_o&list=OLAK5uy_nuUlm1TimVbXVy2vdkvZS-voAdMzzzRVk" target="_blank"> <img class="albums" src="photos/whitearmor1.jpg" style="width:15%"> </a>
+      <a href="https://www.reddit.com/r/sadboys/comments/d36btg/whitearmor_downer_unofficial_compilation/" target="_blank"> <img class="albums" src="photos/downer.jpg" style="width:15%"> </a>
+      <a href="https://youtu.be/o6LQm56YmaI" target="_blank"> <img class="albums" src="photos/feelings-eternal.jpg" style="width:15%"> </a>
+  </div>
+
+  <div class="mySlides">
+      <img src="photos/yung-sherman.jpg" style="width:25%">
+      <a href="https://www.youtube.com/watch?v=HT3JsSbmarY&list=OLAK5uy_kujnJ1F7m-p7HfKfbsTIJV10WuC6qtmlw" target="_blank"> <img class="albums" src="photos/innocence2.jpg" style="width:15%"> </a>
+      <a href="https://www.youtube.com/watch?v=Z32utafq3n0&list=OLAK5uy_l0VOma-pqsVGcxjB3tBYMiib4HZmim3bA" target="_blank"> <img class="albums" src="photos/innocence.jpg" style="width:15%"> </a>
+  </div>
+
+  <!-- Image text -->
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <!-- Thumbnail images -->
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="photos/bladee.jpg" style="width:100%" onclick="currentSlide(1)" alt="Bladee&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bladee&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bladee&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bladee&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bladee&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bladee&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bladee&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bladee&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bladee&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="photos/ecco2k.jpg" style="width:100%" onclick="currentSlide(2)" alt="Ecco2k&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ecco2k&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ecco2k&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ecco2k&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ecco2k&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ecco2k&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ecco2k&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ecco2k&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="photos/thaiboy-digital.jpg" style="width:100%" onclick="currentSlide(3)" alt="Thaiboy Digital&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Thaiboy Digital&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Thaiboy Digital&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Thaiboy Digital&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Thaiboy Digital&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="photos/whitearmor.jpg" style="width:100%" onclick="currentSlide(4)" alt="Whitearmor&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Whitearmor&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Whitearmor&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Whitearmor&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Whitearmor&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Whitearmor&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="photos/yung-sherman.jpg" style="width:100%" onclick="currentSlide(5)" alt="Yung Sherman&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp Yung Sherman&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp Yung Sherman&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp Yung Sherman&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp Yung Sherman&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp">
+    </div>
+  </div>
+</div>
+</body>
+</html>
